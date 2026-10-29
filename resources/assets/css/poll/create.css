@@ -1,0 +1,21 @@
+.tbl-question td{
+    padding: 3px;
+}
+
+.tbl-question table tbody tr td {
+    border: none!important;
+}
+
+.tbl-question table tbody tr td.add_row_th{
+    float: left;
+    display: inline-flex;
+}
+
+.table th, .table td {
+    border-bottom: 1px solid #fff!important;
+}
+
+.table th, .table td {
+    border-top: none!important;
+}
+

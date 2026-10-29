@@ -1,0 +1,25 @@
+.actionButton {
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+}
+
+.buttoncreateService {
+    position: relative;
+    top: -11px;
+    color: #2A2E30;
+    background-color: rgb(53, 223, 152)!important;
+    border-color: #4CAF50;
+}
+
+.card-service {
+    border: solid!important;
+    border-color: #d6dbe3!important;
+    background: #d6dbe3!important;
+    box-shadow: 0px 0px 15px var(--mainBoxShadow) !important;
+}
+
+.tbl-coverages td,
+.tbl-parameters td {
+    padding: 3px;
+}

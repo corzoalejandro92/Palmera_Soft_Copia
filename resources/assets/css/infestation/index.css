@@ -1,0 +1,39 @@
+.avatar.md {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}
+
+.custom-file-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.custom-file {
+    width: 212px!important;
+}
+
+.tbl-documents td {
+    padding: 3px;
+}
+
+.file-link {
+    padding: 10px;
+    top: 10px;
+    position: relative;
+}
+
+.img-plaga {
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}

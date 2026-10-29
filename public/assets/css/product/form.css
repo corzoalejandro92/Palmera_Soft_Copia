@@ -1,0 +1,77 @@
+.buttonProductCreate{
+    position: relative;
+    display: block;
+    font-size: 40px!important;
+    padding: 5px;
+    top: 23px;
+}
+
+
+
+.avatar.md {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatarMechanism.md {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-file{
+
+    position: relative;
+    left: 116px;
+    top: -46px;
+}
+
+.avatar {
+    border-radius: 15%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}
+
+.custom-file-label {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.tbl-documents td,
+.tbl-methods td
+{
+    padding: 3px;
+}
+
+.file-link{
+    padding: 10px;
+    top: 10px;
+    position: relative;
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #deffe1 !important;
+    color: #424242 !important;
+    border-right: 1px solid #c0c0c0;
+}
+.avatar.md {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}

@@ -1,0 +1,121 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+Options -MultiViews -Indexes
+</IfModule>
+
+RewriteEngine On
+
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+
+
+
+# Handle Authorization Header
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteCond %{REQUEST_URI} ^/vendor/telescope/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Redirect Trailing Slashes If Not A Folder...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+</IfModule>
+
+<Files ~ ".env|.env.example|.htaccess|.htaccess.example|artisan|composer.json|composer.lock|.gitignore|.gitattributes|package.json|phpunit.xml|webpack.mix.js">  
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+RedirectMatch 403 ^/vendor/.*$
+RedirectMatch 403 ^/tests/.*$
+RedirectMatch 403 ^/storage/app/framework/.*$
+RedirectMatch 403 ^/storage/app/logs/.*$
+RedirectMatch 403 ^/storage/app/.vscode/.*$
+
+#esto se incluye para abrir los pdf sin compresion .gzip 
+#y poder concocer el estado de descarga (loaded/total)
+<FilesMatch "\.(?i:pdf)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType application/pdf .pdf
+</FilesMatch>
+
+<FilesMatch "\.(?i:rar)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType application/rar .rar
+</FilesMatch>
+
+<FilesMatch "\.(?i:zip)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType application/zip .zip
+</FilesMatch>
+
+<FilesMatch "\.(?i:docx)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType application/vnd.openxmlformats-officedocument.wordprocessingml.document .docx
+</FilesMatch>
+
+<FilesMatch "\.(?i:mp4)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType video/mp4 .mp4
+</FilesMatch>
+
+<FilesMatch "\.(?i:png)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType image/png .png
+</FilesMatch>
+
+<FilesMatch "\.(?i:jpeg)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType image/jpeg .jpeg
+</FilesMatch>
+
+<FilesMatch "\.(?i:jpg)$">
+    RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Expose-Headers Content-Length
+ 
+    Header set Content-Encoding identity
+    AddType image/jpeg .jpg
+</FilesMatch>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

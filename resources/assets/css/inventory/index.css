@@ -1,0 +1,38 @@
+.inputMinimunVal input {
+    padding: 0px 5px !important;
+}
+
+.inputMaximunVal input {
+    padding: 0px 5px !important;
+}
+
+
+/*********************************************************************/
+
+.mechanismRadio, .facturableRadio{
+    position: relative;
+    top: 9px;
+    margin-left: 5px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    max-width: 314px;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.5rem;
+}
+
+.compress-padding {
+    padding-right: 7px;
+    padding-left: 10px;
+}
+
+.table th, .table td {
+    padding: 0.75rem 0rem;
+}

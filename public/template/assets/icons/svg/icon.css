@@ -1,0 +1,145 @@
+i[class*="custom-"] {
+    -webkit-mask-size: contain;
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+    display: flex;
+}
+
+i[class*="custom-mouse"] {
+    -webkit-mask-image: url('mouse.svg');
+}
+
+i[class*="custom-infection"] {
+    -webkit-mask-image: url('infection.svg');
+}
+
+i[class*="custom-insect"] {
+    -webkit-mask-image: url('insect.svg');
+}
+
+i[class*="custom-wash"] {
+    -webkit-mask-image: url('wash.svg');
+}
+
+i[class*="custom-tent"] {
+    -webkit-mask-image: url('tent.svg');
+}
+
+i[class*="custom-fix"] {
+    -webkit-mask-image: url('fix.svg');
+}
+
+i[class*="custom-leak"] {
+    -webkit-mask-image: url('leak.svg');
+}
+
+i[class*="custom-folder-open"] {
+    -webkit-mask-image: url('folder-open.svg');
+}
+
+i[class*="custom-watch"] {
+    -webkit-mask-image: url('watch.svg');
+}
+
+i[class*="custom-employees"] {
+    -webkit-mask-image: url('employees.svg');
+}
+
+i[class*="custom-package"] {
+    -webkit-mask-image: url('package.svg');
+}
+
+i[class*="custom-mosquito"] {
+    -webkit-mask-image: url('mosquito.svg');
+}
+
+i[class*="custom-mosquito2"] {
+    -webkit-mask-image: url('mosquito2.svg');
+}
+
+i[class*="custom-moth"] {
+    -webkit-mask-image: url('moth.svg');
+}
+
+i[class*="custom-desinfect"] {
+    -webkit-mask-image: url('desinfect.svg');
+}
+
+i[class*="custom-gel"] {
+    -webkit-mask-image: url('gel.svg');
+}
+
+i[class*="custom-bee"] {
+    -webkit-mask-image: url('bee.svg');
+}
+
+i[class*="custom-snake"] {
+    -webkit-mask-image: url('snake.svg');
+}
+
+i[class*="custom-fly"] {
+    -webkit-mask-image: url('fly.svg');
+}
+
+i[class*="custom-bird"] {
+    -webkit-mask-image: url('bird.svg');
+}
+
+i[class*="custom-toad"] {
+    -webkit-mask-image: url('toad.svg');
+}
+
+i[class*="custom-bat"] {
+    -webkit-mask-image: url('bat.svg');
+}
+
+i[class*="custom-termite"] {
+    -webkit-mask-image: url('termite.svg');
+}
+
+i[class*="custom-washtruck"] {
+    -webkit-mask-image: url('washtruck.svg');
+}
+
+i[class*="custom-wasp"] {
+    -webkit-mask-image: url('wasp.svg');
+}
+
+i[class*="custom-spider"] {
+    -webkit-mask-image: url('spider.svg');
+}
+
+i[class*="custom-scorpion"] {
+    -webkit-mask-image: url('scorpion.svg');
+}
+
+i[class*="custom-electrictrap"] {
+    -webkit-mask-image: url('electrictrap.svg');
+}
+
+i[class*="custom-package2"] {
+    -webkit-mask-image: url('package2.svg');
+}
+
+i[class*="custom-default"] {
+    -webkit-mask-image: url('default.svg');
+}
+
+i[class*="custom-send"] {
+    -webkit-mask-image: url('send.svg');
+}
+
+i[class*="custom-ant"] {
+    -webkit-mask-image: url('ant.svg');
+}
+
+i[class*="custom-caves"] {
+    -webkit-mask-image: url('caves.svg');
+}
+
+i[class*="custom-snail"] {
+    -webkit-mask-image: url('snail.svg');
+}

@@ -1,0 +1,19 @@
+.last-updated {
+    float: right;
+    font-size: 13px;
+    font-style: italic;
+    color: black;
+}
+
+.block-template {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    margin: 3px 0px;
+    color: #333;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cke_contents {
+    min-height: 400px !important;
+}

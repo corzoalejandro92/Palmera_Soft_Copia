@@ -1,0 +1,28 @@
+@include('layouts.loading.full')
+@if($settingFoxconDelete)
+    <div class="modal-header">
+        <h4 class="modal-title">ELIMINAR CONFIGURACIÓN FOXCON</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="mt-2">
+            <div class="float-left">
+                <i style="font-size: 4.4rem;" class="la la-trash"></i>
+            </div>
+            <div class=" text-center">
+                <p style="font-size: 1.4rem;">¿Realmente desea eliminar la configuración Foxcon para <b>{{$settingFoxconDelete->typeDocument->name}} - {{$settingFoxconDelete->nomenclature}}</b>?</p>
+            </div>
+            <form id="frmFoxconDelete">
+                {{ method_field('DELETE') }} 
+                {{ csrf_field() }}
+                <input type="hidden" name="id" value="<?= $settingFoxconDelete->id ?>" />
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary round" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger round" data-click="deleteFoxconSettings">Eliminar</button>
+    </div>
+@endif

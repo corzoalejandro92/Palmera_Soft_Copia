@@ -1,0 +1,5 @@
+<label class="col-4 col-form-label">Fecha y hora*</label>
+<div class="col-8">
+    <input data-change="hiden-error" class="typeahead form-control pickadate-translations" style="width: 55%;display: inline-block;background-color: #3a7f56!important;color: #fff;padding: 5px;text-align: center;box-shadow: none!important;" data-keyup="hiden-error" value="{{ isset ($scheduling->start_front) ? ucwords($scheduling->start_front->format('d F, Y')) : '' }}" name="start"  placeholder="Fecha" autocomplete="no">
+    <input  data-change="hiden-error" type="text" class="form-control timepickers" style="width: 40%;display: inline-block;background-color: #4CAF50!important;color: #fff!important;padding: 5px;text-align: center;box-shadow: none!important;" data-keyup="hiden-error" value="{{isset ($scheduling->start_front) ? strtoupper($scheduling->start_front->format('h:i a')) : '' }}" name="time_start" placeholder="Hora" autocomplete="no">
+</div>

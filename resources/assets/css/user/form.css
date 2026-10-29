@@ -1,0 +1,127 @@
+.buttonUserCreate {
+    position: relative;
+    display: block;
+    font-size: 40px!important;
+    padding: 5px;
+    top: 21px;
+}
+
+i.icon-user-following.buttonUserCreate:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.userLogo {
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px #6765ce;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #6866ce;
+    color: #fff;
+}
+
+.avatar.md {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar.sm {
+    width: 100px;
+    height: 100px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}
+
+.signature {
+    width: 200px;
+}
+
+.custom-file-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tbl-documents td {
+    padding: 3px;
+}
+
+.file-link {
+    padding: 10px;
+    top: 10px;
+    position: relative;
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: -webkit-calc(2.75rem + 2px);
+    height: -moz-calc(2.75rem + 2px);
+    height: calc(1.75rem + 100%);
+    margin-bottom: 1px;
+}
+
+.form .select2-container--default .select2-search--inline .select2-search__field {
+    width: 100%!important;
+}
+
+.form .select2-search--inline {
+    width: 100%!important;
+}
+
+table tbody tr td i[class|="icon"] {
+    display: inline-block!important;
+}
+
+.vis-item .vis-item-content {
+    white-space: break-spaces!important;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 340px!important;
+    overflow-y: auto;
+}
+
+table#tblList tr th.select-checkbox.selected::after {
+    content: "✔";
+    margin-top: -11px;
+    margin-left: -4px;
+    text-align: center;
+    text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
+}
+
+table#tblList thead th.select-checkbox:before,
+table#tblList thead th.select-checkbox:before {
+    content: ' ';
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+table#tblList thead th.select-checkbox:before,
+table#tblList thead td.select-checkbox:after,
+table#tblList thead th.select-checkbox:before,
+table#tblList thead th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+.position-relative .form-control {
+    padding-right: -webkit-calc(1.75rem + 2px);
+    padding-right: -moz-calc(1.75rem + 2px);
+    padding-right: calc(1.75rem + 2px);
+}

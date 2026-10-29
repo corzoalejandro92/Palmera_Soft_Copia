@@ -1,0 +1,102 @@
+.review-service-icon {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nopadding-td {
+    padding: 20px 0px 12px 4px!important;
+    color: var(--secondary);
+}
+
+.buttonAdvance {
+    color: #333333!important;
+    border-color: #babfc7!important;
+    position: relative;
+    top: 26px;
+}
+
+.actionIcono {
+    font-size: 20px;
+    position: absolute;
+    right: 26px;
+    top: -5px;
+}
+
+.tbl-services td {
+    padding: 3px;
+}
+
+.avatar.md {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}
+
+.tbl-supplies td {
+    padding: 3px;
+}
+
+.restore-trash {
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+.select2-selection__choice {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 74px;
+}
+
+.file-link {
+    padding: 10px;
+    top: 0px!important;
+    position: relative;
+}
+
+.content-diagnosis {
+    position: relative;
+    left: 150%;
+    margin-top: 41px;
+}
+
+.block-template {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    margin: 3px 0px;
+    color: #333;
+    user-select: none;
+    cursor: pointer;
+}
+
+.select2-selection__choice {
+    width: auto!important;
+}
+
+@media (min-width: 1200px) {
+    #supplies .container {
+        max-width: 90%;
+    }
+}
+
+.tbl-services th,
+.tbl-services td {
+    border-bottom: 1px solid #ffffff!important;
+}
+
+.parameters {
+    padding-bottom: 40px!important;
+    line-height: 40px;
+    padding-left: 10px!important;
+}

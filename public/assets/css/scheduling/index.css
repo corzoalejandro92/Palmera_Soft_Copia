@@ -1,0 +1,97 @@
+.btn-fix-position {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fc-event span {
+    font-size: 0.8rem;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+.underTabContent {
+    background: #f9f9f9;
+    border: 1px solid #eeeeee;
+    box-shadow: inset 0px 1px 12px #c7c2c2;
+    border-radius: 4px;
+}
+
+.opaque {
+    color: #9E9E9E;
+}
+
+.tbl-observations td,
+.tbl-supplies td,
+.tbl-tasks td {
+    padding: 0.3rem 0.3rem;
+}
+
+.custom-file-input {
+    z-index: 2;
+    width: 135px;
+}
+
+.d-number {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #b7b7b7;
+}
+
+.tbl-supplies {
+    counter-reset: section;
+}
+
+.d-number:after {
+    counter-increment: section;
+    content: counter(section);
+}
+
+.custom-file {
+    width: 150px!important;
+    float: right;
+}
+
+.td-100 {
+    width: 100%;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    max-width: 314px;
+}
+
+.vis-item .vis-item-content {
+    white-space: nowrap!important;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.customerLogo {
+    position: relative;
+    margin-left: 24px;
+    margin-right: 14px;
+    margin-top: 10px;
+}
+
+.avatar.md {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar {
+    border-radius: 15%;
+    cursor: pointer !important;
+}
+
+.avatar-percent {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}

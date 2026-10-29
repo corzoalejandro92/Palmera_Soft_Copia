@@ -1,0 +1,22 @@
+.custom-file-label {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.tbl-documents td{
+    padding: 3px;
+}
+
+.file-link{
+    padding: 10px;
+    top: 10px;
+    position: relative;
+}
+
+
+table {
+	width: 100%!important;
+}

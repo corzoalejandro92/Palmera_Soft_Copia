@@ -1,0 +1,26 @@
+<?php
+use Illuminate\Support\Facades\Route;
+Route::get('customer/crm/{id}','Api\CrmController@getCrm');
+Route::get('customer/crm/{id}/offices','Api\CrmController@getOffices');
+Route::get('customer/office/{id}/contacts','Api\CrmController@getContacts');
+Route::get('customer/office/{id}/quotes','Api\CrmController@getQuotes');
+Route::post('customer/approve-quote','Api\CrmController@ApprovedQuote')->middleware('verifyAPIToken');
+Route::get('customer/office/{id}/reports-services','Api\CrmController@reportServices');
+Route::get('customer/office/{office}/areas','Administrative\CrmReportController@areas');
+Route::get('customer/office/{office}/report-types','Administrative\CrmReportController@reportTypes');
+Route::get('customer/office/{office}/controls','Administrative\CrmReportController@controls');
+Route::get('customer/control/{control}/pests','Administrative\CrmReportController@pests');
+Route::get('customer/office/{office}/heatmap','Administrative\CrmReportController@getData');
+Route::get('customer/report/consolidated', 'Administrative\CrmReportController@getConsolidated');
+Route::get('customer/office/{office}/schedules-month', 'Api\CrmController@getSchedulesOfMonth');
+Route::get('customer/office/{office}/schedules', 'Api\CrmController@getSchedules');
+Route::get('customer/office/{id}/tickets','Api\CrmController@getTickets');
+Route::get('customer/office/{id}/tickets-filter','Api\CrmController@listTicketsFilter');
+Route::get('customer/office/{id}/tickets-categories','Api\CrmController@listTicketsCategories');
+Route::get('customer/office/{id}/tickets-priorities','Api\CrmController@listTicketsPriorities');
+Route::post('customer/office/{id}/ticket-save','Api\CrmController@saveTicket')->middleware('verifyAPIToken');
+Route::post('customer/office/{id}/ticket-save','Api\CrmController@saveTicket')->middleware('verifyAPIToken');
+Route::post('customer/office/{id}/ticket-answer','Api\CrmController@saveTicketAnswer')->middleware('verifyAPIToken');
+Route::get('customer/office/{id}/files','Api\CrmController@files')->middleware('verifyAPIToken');
+Route::get('customer/office/{id}/plans','Api\CrmController@plans')->middleware('verifyAPIToken');
+Route::get('customer/office/{id}/previewPlan','Api\CrmController@previewPlan');

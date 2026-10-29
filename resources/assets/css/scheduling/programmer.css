@@ -1,0 +1,157 @@
+.fc-axis.fc-time.fc-widget-content{
+    position:relative;
+  }
+
+  .activity-timeline .act-time {
+    width: 100px;
+}
+
+
+.fc-view-container {
+    overflow-x: scroll;
+}
+
+.slot-timeline-end {
+    position: absolute!important;
+    border-top: 2px solid red;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999!important;
+}
+
+.slot-timeline-start {
+    position: absolute!important;
+    border-top: 2px solid #2196F3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999!important;
+}
+
+.fc-event-container .fc-time,
+.fc-event-container .fc-title {
+    color: #fff!important;
+}
+
+.fc-time-grid-event.fc-short .fc-time:before {
+    content: attr(data-full)!important;
+}
+
+.fc-event .fc-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+}
+
+.fc-time-grid-event .fc-time,
+.fc-time-grid-event .fc-title {
+    padding: 0 1px;
+    display: inline-flex;
+}
+
+.fc-time-grid-event.fc-short .fc-time,
+.fc-time-grid-event.fc-short .fc-title {
+    display: block;
+    vertical-align: top;
+}
+
+.fc td,
+.fc th {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    vertical-align: top;
+    white-space: break-spaces;
+}
+
+
+.fc-widget-header{
+    font-size: 12px;
+}
+
+.fc-axis { 
+    width: 50px !important;
+}
+
+.popover {
+    width: 30%;
+    height: auto;
+    max-width: none;
+    z-index: 10000;
+}
+
+.popover-body {
+    padding: 0.55rem 0.55rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popover-div-td {
+    border: solid 1px #aaa;
+    left: 5px;
+    border-collapse: collapse;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.fc-axis-selected{
+        background: #ffeb3b;
+}
+.fc-axis{
+    cursor: pointer;
+}
+
+.avatar-percent {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer !important;
+}
+
+.event-selected {
+    box-shadow: 0px 0px 30px #000000;
+    border: 0px solid #000000!important;
+    background-color: #060606!important;
+    color: #fff!important;
+}
+
+.fc-row .fc-bg {
+    z-index: unset;
+}
+
+tr:first-child>td>.fc-day-grid-event {
+    margin-top: 2px;
+    margin-bottom: 11px;
+}
+
+#minicalendar .fc-icon-right-single-arrow:after {
+    content: "\203A";
+    font-weight: 700;
+    font-size: 200%;
+    top: -85%;
+}
+
+#minicalendar .fc-icon-left-single-arrow:after {
+    content: "\2039";
+    font-weight: 700;
+    font-size: 200%;
+    top: -85%;
+}
+
+.events-content .table th,
+.events-content .table td {
+    padding: 0.2rem 0.1rem;
+    font-size: 13px;
+}
+
+.table td,
+.table th {
+    padding: 0.5rem 0.5rem;
+    font-size: 13px;
+}
+
+.hasroute{
+    border-left: 6px solid #dcc927!important;
+}

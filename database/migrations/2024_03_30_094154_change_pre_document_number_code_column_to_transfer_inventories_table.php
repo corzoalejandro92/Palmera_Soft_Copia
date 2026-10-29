@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class ChangePreDocumentNumberCodeColumnToTransferInventoriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('transfer_inventories', function (Blueprint $table) {
+            $table->string('pre_document_number')->nullable()->change();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('transfer_inventories', function (Blueprint $table) {
+            $table->string('pre_document_number')->nullable(false)->change();
+        });
+    }
+}
